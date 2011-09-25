@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <%= render '/layouts/head' %>
-<body>
-  <%= render '/layouts/header' %>
-
-<%= yield %>
-
-</body>
+  <body>
+    <div id="content">
+      <%= render '/layouts/header' %>
+      <%= yield %>
+      <%= render '/layouts/footer' %>
+    </div>
+  </body>
 </html>
