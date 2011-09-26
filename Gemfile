@@ -34,4 +34,6 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
-gem 'duckling_cms', :path => '/srv/gems/duckling_cms'
+gem 'devise'
+gem 'rspec-rails'
+gem 'paperclip'
