@@ -1,4 +1,4 @@
-class Admin::TechnologiesController < ApplicationController
+class Admin::TechnologiesController < AbstractAdminController
   # GET /technologies
   # GET /technologies.json
   def index

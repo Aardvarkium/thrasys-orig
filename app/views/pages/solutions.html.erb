@@ -3,7 +3,7 @@
     <div class="tab-container">
       <ul>
         <% @solutions.each do |f| %>
-          <li><a href="#" id="<%= f.tab_title.gsub(/ /,'') %>"><%= f.tab_title %></a></li>
+          <li><a href="#" id="<%= f.tab_title.gsub(/ /,'').downcase %>"><%= f.tab_title %></a></li>
         <% end %>
       </ul>
     </div>
@@ -11,10 +11,10 @@
     <div id="subpage_middle">
       <div id="subpage-content-left">
         <% @solutions.each do |f| %>
-          <div id="<%= f.tab_title.gsub(/ /,'') %>" class="show-hide">
+          <div id="<%= f.tab_title.gsub(/ /,'').downcase %>" class="show-hide">
             <img src="<%= f.image.url %>" class="<%= cycle("right", "left") %>" />
             <h1><%= f.title %></h1>
-            <%= f.description %>
+            <%= raw f.description %>
             <div class="divider clear"></div>
           </div>
         <% end %>
