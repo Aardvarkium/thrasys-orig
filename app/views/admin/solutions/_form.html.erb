@@ -1,4 +1,4 @@
-<%= form_for([:admin, @solution]) do |f| %>
+<%= form_for [:admin, @solution], :html => { :multipart => true } do |f| %>
   <% if @solution.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@solution.errors.count, "error") %> prohibited this solution from being saved:</h2>
@@ -16,8 +16,15 @@
     <%= f.text_area :description %>
   </div>
   <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
     <%= f.label :sort_order %><br />
     <%= f.number_field :sort_order %>
+  </div>
+  <div class="field">
+    <%= f.file_field :image %>
   </div>
   <div class="actions">
     <%= f.submit %>

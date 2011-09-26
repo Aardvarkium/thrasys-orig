@@ -1,4 +1,4 @@
-class Admin::SolutionsController < ApplicationController
+class Admin::SolutionsController < AbstractAdminController
   # GET /solutions
   # GET /solutions.json
   def index
@@ -60,7 +60,7 @@ class Admin::SolutionsController < ApplicationController
 
     respond_to do |format|
       if @solution.update_attributes(params[:solution])
-        format.html { redirect_to @solution, notice: 'Solution was successfully updated.' }
+        format.html { redirect_to '/admin/solutions', notice: 'Solution was successfully updated.' }
         format.json { head :ok }
       else
         format.html { render action: "edit" }

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110925234845) do
+ActiveRecord::Schema.define(:version => 20110926024504) do
 
   create_table "page_parts", :force => true do |t|
     t.integer  "page_id"
@@ -43,14 +43,22 @@ ActiveRecord::Schema.define(:version => 20110925234845) do
   add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
 
   create_table "solutions", :force => true do |t|
+    t.string   "title"
+    t.string   "tab_title"
     t.text     "description"
     t.integer  "sort_order"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "technologies", :force => true do |t|
     t.text     "description"
+    t.string   "title"
+    t.string   "tab_title"
     t.integer  "sort_order"
     t.datetime "created_at"
     t.datetime "updated_at"

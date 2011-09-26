@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <th>Description</th>
+    <th>Title</th>
     <th>Sort order</th>
     <th></th>
     <th></th>
@@ -11,7 +11,7 @@
 
 <% @solutions.each do |solution| %>
   <tr>
-    <td><%= solution.description %></td>
+    <td><%= solution.title %></td>
     <td><%= solution.sort_order %></td>
     <td><%= link_to 'Edit', edit_admin_solution_path(solution) %></td>
     <td><%= link_to 'Destroy', [:admin, solution], confirm: 'Are you sure?', method: :delete %></td>
