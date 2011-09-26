@@ -37,3 +37,5 @@ end
 gem 'devise'
 gem 'rspec-rails'
 gem 'paperclip'
+gem 'therubyracer'
+gem 'duckling_blog', :path => '/src/gems/duckling_blog'

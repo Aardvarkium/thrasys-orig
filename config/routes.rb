@@ -1,6 +1,6 @@
 Thrasys::Application.routes.draw do
 
-
+  mount DucklingBlog::Engine => '/blog'
   devise_for :members
   devise_for :admins
   root :to => 'home#index'
