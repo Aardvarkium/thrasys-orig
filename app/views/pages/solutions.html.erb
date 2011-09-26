@@ -1,270 +1,32 @@
- <div id="subpage" class="wrapper"> 
-  <div id="subpage-content"> 
-    <div class="tab-container"> 
-      <ul> 
-        <%= @solutions.each do |f| %>
-          <%= f %>
+<div id="subpage" class="wrapper">
+  <div id="subpage-content">
+    <div class="tab-container">
+      <ul>
+        <% @solutions.each do |f| %>
+          <li><a href="#" id="<%= f.tab_title.gsub(/ /,'') %>"><%= f.tab_title %></a></li>
         <% end %>
-        <li><a class="tab_on" href="#" id="overview">Overview</a></li> 
-        <li><a href="#" id="role">Role-Based Services</a></li> 
-        <li><a href="#" id="enterprise">Enterprise Model</a></li> 
-        <li><a href="#" id="xml">XML Services</a></li> 
-        <li><a href="#" id="bpm">BPM &amp; Workflows</a></li> 
-        <li><a href="#" id="rules">Rules</a></li> 
-        <li><a href="#" id="ui">UI Framework</a></li> 
-        <li><a href="#" id="collaboration">Collaboration</a></li> 
-        <li><a href="#" id="esb">ESB</a></li> 
-      </ul> 
-    </div> 
-    <div id="subpage_top"></div> 
-    <div id="subpage_middle"> 
-      <div id="subpage-content-left"> 
-        <div id="overview" class="show-hide"> 
-          <img rel="225x255" alt="Img Open Health Platform B" title="Img Open Health Platform B" src="/system/images/BAhbBlsHOgZmSSI7MjAxMS8wNS8yMy8yMV81MV8yOV81NjhfaW1nX29wZW5faGVhbHRoX3BsYXRmb3JtX0IucG5nBjoGRVQ/img_open_health_platform-B.png" class="right" align="right" width="530" height="370" />
-
-<h1>SyntraNet Open Health Platform</h1>
-
-<p>
-
-The SyntraNet Open Health Platform provides technologies and components to rapidly build and deploy highly scalable collaborative health networks that provide interoperability, connectivity and applications for communities of care providers, patients, service centers, payers and public health administrators. 
-
-</p>
-
-<p>
-
-SyntraNet brings patent pending innovations for information technology designed for networks of connected enterprises and implements state of the art architectures for XML services, user interfaces, configurable workflows, rules, interoperability and extensible applications.
-
-</p>
-
-<p>
-
-Open application programming interfaces enable third-parties and partners to offer a growing suite of applications that can be delivered and deployed through SyntraNet.
-
-</p> 
-        <div class="divider clear"></div> 
-        </div> 
- 
-        <div id="role" class="show-hide"> 
-          <img rel="225x255" alt="Img Roled Based App Services" title="Img Roled Based App Services" src="/system/images/BAhbBlsHOgZmSSI9MjAxMS8wNS8yMy8yMV81Ml8zOF82ODBfaW1nX3JvbGVkX2Jhc2VkX2FwcF9zZXJ2aWNlcy5wbmcGOgZFVA/img_roled-based_app_services.png" class="left" align="left" width="380" height="350" />
-
-<h1>Role-Based Application Services</h1>
-
-<p>
-
-Application services can be flexibly configured to support tasks and workflows for different roles within a health network—physicians, nurses, laboratory technicians, pharmacists, patients, front-office personnel, schedulers, system administrators, and so on.  
-
-</p>
-
-<p>
-
-Some of the application services provided by SyntraNet include capabilities to exchange information, coordinate workflows and interoperate; create and manage unique identities (persons, physicians and other resources); register persons/patients and check-in visits; access and update demographic and clinical information information; place orders and manage clinical workflows; implement rules with decision support; schedule local and global resources; capture charges; automate revenue cycle processes; send alerts and notifications; and comply with requirements for quality and public health reporting.
-
-</p>
-
-<p>
-
-Application services can be configured to function as a health information exchange; an on-demand EHR/practice management solution for physician practices; a patient portal; extension applications for hospitals; analytics solutions for population health management; and so on.
-
-</p>
-
- 
-        <div class="divider clear"></div> 
-        </div> 
-        <div id="enterprise" class="show-hide"> 
-          <img rel="225x255" alt="Img Multi Enterprise Model" title="Img Multi Enterprise Model" src="/system/images/BAhbBlsHOgZmSSI7MjAxMS8wNS8yMy8yMV81M18zMl8xNDRfaW1nX211bHRpX2VudGVycHJpc2VfbW9kZWwucG5nBjoGRVQ/img_multi-enterprise_model.png" class="right" align="right" width="460" height="443" />
-
-<h1>Multi-Enterprise Information Model</h1>
-
-
-
-<p>
-
-Unlike earlier generations of healthcare solutions, SyntraNet is designed from the ground up for networks of connected enterprises.  Enterprises are modeled as nodes in a connected network with varying degrees of relationship among network participants—much like a complex social network for enterprises. 
-
-</p>
-
-<p>
-
-In the simplest case, a SyntraNet network can be defined as a single, vertically integrated enterprise—the usual model in traditional enterprise applications.  A somewhat more complex SyntraNet network is a collection of enterprises that are independent of one another—a configuration equivalent to "multi-tenancy" applications.  And SyntraNet networks can be also configured to define considerably more complex topologies than multi-tenancy with hierarchies of organizations with varying degrees of relationship among participants.
-
-</p>
-
-<p>
-
-With SyntraNet, applications are targeted at an entire health network with fine-grained control over data, processes, configuration and security for each participant.  The SyntraNet information and application model are unique to the industry and a new foundation for connected health information technology.
-
-</p>
-
- 
-        <div class="divider clear"></div> 
-        </div> 
- 
-        <div id="xml" class="show-hide"> 
-          <img rel="225x255" alt="Img Xml Services" title="Img Xml Services" src="/system/images/BAhbBlsHOgZmSSIwMjAxMS8wNS8yMy8yMV81NV8wMV81MV9pbWdfeG1sX3NlcnZpY2VzLnBuZwY6BkVU/img_xml_services.png" class="left" align="left" width="420" height="320" />
-
-
-
-<h1>Configurable, Scalable XML Services</h1>
-
-
-
-<p>
-
-From elementary CRUD (create, read, update, delete) services to high level platform and application services, all SyntraNet platform and application services are delivered as internationalized, configurable and scalable XML services deployed in the cloud.
-
-</p>
-
-<p>
-
-Internationalized services support users from different locales to use applications with locale specific behavior—screen layout, text input and edits, reference data, sorting policies, calendaring systems, currency formats, and so on. 
-
-</p>
-
-<p>
-
-Configurable services use metadata to define functionality—for example, the "Register New Patient" service can function differently for different network participants based on configuration.   Services are assembled as sequences of pre-defined message request handlers to enable rapid deployment and easy customization.
-
-</p>
-
-<p>
-
-Unlike traditional enterprise applications designed for use within firewalls, SyntraNet services are built to scale to very large numbers of users and transactions.
-
-</p>
-
- 
-          <div class="divider clear"></div> 
-        </div> 
-        <div id="bpm" class="show-hide"> 
-          <img alt="Img Bpm Workflows" title="Img Bpm Workflows" src="/system/images/BAhbBlsHOgZmSSIyMjAxMS8wNS8yMy8yMV81N18yMF81MzJfaW1nX0JQTV93b3JrZmxvd3MucG5nBjoGRVQ/img_BPM_workflows.png" class="right" align="right" width="380" height="350" />
-
-
-
-<h1>Business Process Management and Customizable Workflows</h1>
-
-<p>
-
-SyntraNet proves a powerful standards-based business process management engine to define and manage business processes based on process graphs.  Process graphs support complex workflow patterns and standard patterns can be assembled together to define extremely complex processes.  
-
-</p>
-
-<p>
-
-Unlike "free-form" process definition languages based on sequencing series of activities, business processes defined with process graphs can be validated and analyzed to detect process problems and bottlenecks.
-
-</p>
-
-<p>
-
-SyntraNet provides a library of standard process definitions for administrative, clinical, revenue management, and patient facing workflows.
-
-</p>
-
-
-
- 
-          <div class="divider clear"></div> 
-        </div> 
-        <div id="rules" class="show-hide"> 
-          <img rel="225x255" alt="Img Rules" title="Img Rules" src="/system/images/BAhbBlsHOgZmSSIqMjAxMS8wNS8yMy8yMV81OF8xNl8yODNfaW1nX3J1bGVzLnBuZwY6BkVU/img_rules.png" class="left" align="left" width="382" height="352" />
-
-
-
-<h1>Rules Management</h1> 
-
-<p>
-
-The SyntraNet rules engine—used to implement administrative, clinical and other rules—is based on a full implementation of the RETE pattern-matching algorithm for extremely efficient representation and processing of large sets of rules. 
-
-</p>
-
-<p>
-
-The RETE algorithm is well-known among designers of rules and inference based systems and is the most efficient algorithm to evaluate and process larger rule sets. 
-
-</p>
-
-<p>
-
-SyntraNet provides a library of pre-defined rules and the ability to dynamically add and remove rules at run time.
-
-</p>
-
-
-
- 
-          <div class="divider clear"></div> 
-        </div> 
-        <div id="ui" class="show-hide"> 
-          <img rel="225x255" alt="Img Ui Framework 2" title="Img Ui Framework 2" src="/system/images/BAhbBlsHOgZmSSIzMjAxMS8wNS8yMy8yMV81OV8yM18yMzNfaW1nX1VJX2ZyYW1ld29ya18yLnBuZwY6BkVU/img_UI_framework-2.png" class="right" align="right" width="400" height="360" />
-
-<h1>Powerful User Interface Framework</h1>
-
-<p>
-
-
-
-An important goal for a new generation of health information technology is to provide user interfaces that are easy to use, interactively rich and extremely productive user on a variety of front-ends—browsers, desktops, smart phone, pads and other devices.
-
-</p>
-
-<p>
-
-SyntraNet uses open standards to provide a powerful user-interface framework to rapidly build and deploy interactive application user interfaces on a variety of front ends with support for multi-touch and emerging surface platform interfaces.
-
-</p>
-
-<p>
-
-The user interface framework includes capabilities to build rich internet applications (RIA) targeted at the Flash and Silverlight run times, browser based interfaces using HTML5 frameworks, and native smart client interfaces for smart phones, pads and surfaces.
-
-</p>
-
-
-
- 
-          <div class="divider clear"></div> 
-        </div> 
-        <div id="collaboration" class="show-hide"> 
-          <img rel="225x255" alt="Img Collaboration" title="Img Collaboration" src="/system/images/BAhbBlsHOgZmSSIyMjAxMS8wNS8yMy8yMl8wMF8xOV84NzFfaW1nX2NvbGxhYm9yYXRpb24ucG5nBjoGRVQ/img_collaboration.png" class="left" align="left" width="380" height="350" />
-
-<h1>Real-Time Collaboration Services</h1>
-
-<p>
-
-To prepare for a new generation of telehealth applications, SyntraNet integrates open real-time collaboration frameworks and tools to provide real-time social interaction and collaboration services for Connected Health applications.  Real time collaboration services include capabilities for chat, whiteboards, webcams, and shared desktops.  
-
-</p>
-
- 
-          <div class="divider clear"></div> 
-        </div> 
-        <div id="esb" class="show-hide"> 
-          <img rel="225x255" alt="Img Enterprise Bus" title="Img Enterprise Bus" src="/system/images/BAhbBlsHOgZmSSIzMjAxMS8wNS8yMy8yMl8wMV8xNF8zOTFfaW1nX2VudGVycHJpc2VfYnVzLnBuZwY6BkVU/img_enterprise_bus.png" class="right" align="right" width="380" height="320" />
-
-<h1>Enterprise Service/Integration Bus</h1>
-
-<p>
-
-SyntraNet includes a highly scalable and powerful enterprise service bus (ESB) with capabilities to integrate applications, business processes and services across a variety of systems.  The ESB architecture is uniquely suited to manage complex interactions among large number of systems. 
-
-</p>
-
-<p> 
-
-The ESB provides a visual programming environment that uses flow compositions to assemble pretested functional blocks to rapidly configure, test and deploy complex integrations between multiple data sources and applications. The ESB is designed for extremely high performance and reliability.
-
-</p>
-
- 
-        </div> 
-      </div> 
-      <div id="subpage-content-right"> 
-        <div id="siderail"> 
-          <div id="testimonials"> 
-          <p>The SyntraNet Open Health Platform provides technologies and components to rapidly build and deploy highly scalable collaborative health networks that provide interoperability, connectivity and applications for communities of care providers, patients, service centers, payers and public health administrators. </p> 
-          </div> 
-        </div> 
-      </div> 
-    </div> 
-    <div class="clear" id="subpage_bottom"></div> 
+      </ul>
+    </div>
+    <div id="subpage_top"></div>
+    <div id="subpage_middle">
+      <div id="subpage-content-left">
+        <% @solutions.each do |f| %>
+          <div id="<%= f.tab_title.gsub(/ /,'') %>" class="show-hide">
+            <img src="<%= f.image.url %>" class="<%= cycle("right", "left") %>" />
+            <h1><%= f.title %></h1>
+            <%= f.description %>
+            <div class="divider clear"></div>
+          </div>
+        <% end %>
+      </div>
+      <div id="subpage-content-right">
+        <div id="siderail">
+          <div id="testimonials">
+            <p>The SyntraNet Open Health Platform provides technologies and components to rapidly build and deploy highly scalable collaborative health networks that provide interoperability, connectivity and applications for communities of care providers, patients, service centers, payers and public health administrators. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clear" id="subpage_bottom"></div>
+  </div>
+</div>
