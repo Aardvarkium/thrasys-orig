@@ -2,6 +2,9 @@
   <div id="subpage-content"> 
     <div class="tab-container"> 
       <ul> 
+        <%= @solutions.each do |f| %>
+          <%= f %>
+        <% end %>
         <li><a class="tab_on" href="#" id="overview">Overview</a></li> 
         <li><a href="#" id="role">Role-Based Services</a></li> 
         <li><a href="#" id="enterprise">Enterprise Model</a></li> 

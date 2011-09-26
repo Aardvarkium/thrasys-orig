@@ -3,4 +3,7 @@ class Solution < ActiveRecord::Base
   validates_attachment_presence :image
   validates_attachment_size :image, :less_than => 5.megabytes
   validates_attachment_content_type :image, :content_type => ['image/jpeg', 'image/png']
+  validates_presence_of :tab_title
+  validates_presence_of :title
+  validates_presence_of :description
 end
