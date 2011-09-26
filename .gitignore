@@ -1,4 +1,5 @@
 .bundle
+public/system/images
 db/*.sqlite3
 log/*.log
 tmp/
