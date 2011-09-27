@@ -1,5 +1,5 @@
 Thrasys::Application.routes.draw do
-  mount DucklingBlog::Engine => "/blog", :as => "blog_engine"
+  #mount DucklingBlog::Engine => "/blog", :as => "blog_engine"
 
   devise_for :members
   devise_for :admins
