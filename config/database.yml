@@ -18,7 +18,7 @@ test:
   adapter: postgresql
   database: thrasys_test
   username: postgres
-  password: postgres
+  password: seKyour3nUf?
   pool: 5
   timeout: 5000
 
@@ -26,6 +26,6 @@ production:
   adapter: postgresql
   database: thrasys_production
   username: postgres
-  password: postgres
+  password: seKyour3nUf?
   pool: 5
   timeout: 5000
