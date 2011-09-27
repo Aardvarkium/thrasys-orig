@@ -1,4 +1,5 @@
 Thrasys::Application.routes.draw do
+  mount DucklingBlog::Engine => "/blog", :as => "blog_engine"
 
   devise_for :members
   devise_for :admins
@@ -9,6 +10,7 @@ Thrasys::Application.routes.draw do
     resources :solutions
     resources :technologies
   end
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

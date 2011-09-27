@@ -1,3 +1,9 @@
+PATH
+  remote: /srv/gems/duckling_blog
+  specs:
+    duckling_blog (0.0.1)
+      rails (~> 3.1.1.rc1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -166,6 +172,7 @@ DEPENDENCIES
   capistrano-ext
   coffee-rails (~> 3.1.0)
   devise
+  duckling_blog!
   jquery-rails
   paperclip
   passenger

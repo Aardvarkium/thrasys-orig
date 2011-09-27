@@ -7,7 +7,7 @@ development:
   adapter: postgresql
   database: thrasys_development
   username: postgres
-  password: postgres
+  password: seKyour3nUf?
   pool: 5
   timeout: 5000
 
