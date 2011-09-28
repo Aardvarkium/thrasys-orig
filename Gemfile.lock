@@ -2,7 +2,6 @@ PATH
   remote: /srv/gems/duckling_blog
   specs:
     duckling_blog (0.0.1)
-      rails (~> 3.1.1.rc1)
 
 GEM
   remote: http://rubygems.org/
