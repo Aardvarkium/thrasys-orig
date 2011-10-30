@@ -1,16 +1,10 @@
 Thrasys::Application.routes.draw do
-  #mount DucklingBlog::Engine => "/blog", :as => "blog_engine"
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
-  devise_for :members
-  devise_for :admins
+  devise_for :users
   root :to => 'home#index'
   match '/technology' => 'pages#technology'
   match '/solutions' => 'pages#solutions'
-  namespace :admin do
-    resources :solutions
-    resources :technologies
-  end
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

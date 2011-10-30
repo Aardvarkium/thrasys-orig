@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.1.rc1'
+gem 'rails', '3.1.1'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -31,7 +31,6 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
-gem 'devise'
 gem 'rspec-rails'
 gem 'paperclip'
 gem 'therubyracer'
@@ -39,4 +38,6 @@ gem 'capistrano'
 gem 'capistrano-ext'
 gem 'passenger'
 gem 'pg'
-#gem 'duckling_blog', :path => '/srv/gems/duckling_blog'
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+gem "devise"
+gem "sqlite3"
